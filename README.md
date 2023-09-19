@@ -13,20 +13,9 @@ This project focuses on the application of natural language processing (NLP) tec
 
 In this technique, words in the sentences are replaced with their synonyms to generate new sentence variations while preserving the original meaning. This is achieved through the use of WordNet.
 
-\`\`\`python
-# Example code snippet for Synonym Replacement
-def synonym_replace(sentence, synonym_dict):
-    # ... (implementation)
-\`\`\`
-
 ### 2.2 Adversarial Sampling
 
 Adversarial sampling is used to create more complex and nuanced samples. We employ DistilBERT for this task.
-
-\`\`\`python
-# Example code snippet for Adversarial Sampling using DistilBERT
-# ... (implementation)
-\`\`\`
 
 ---
 
@@ -36,39 +25,19 @@ Adversarial sampling is used to create more complex and nuanced samples. We empl
 
 The data is read from a CSV file and split into training and test sets.
 
-\`\`\`python
-# Example code snippet for Data Preprocessing
-train_df, test_df = train_test_split(df, test_size=0.2)
-\`\`\`
-
 ### 3.2 Model Architecture
 
 We use DistilBert for sequence classification.
 
-\`\`\`python
-# Example code snippet for Model Initialization
-model = DistilBertForSequenceClassification.from_pretrained("distilbert-base-uncased", num_labels=2)
-\`\`\`
-
 ### 3.3 Training
 
 The model is trained using Hugging Face's Trainer class.
-
-\`\`\`python
-# Example code snippet for Training
-# ... (implementation)
-\`\`\`
 
 ---
 
 ## 4. Evaluation Metrics
 
 The model is evaluated using Precision, Recall, and F1 Score.
-
-\`\`\`python
-# Example code snippet for Evaluation
-Precision: 0.804, Recall: 0.921, F1 Score: 0.859
-\`\`\`
 
 ---
 
